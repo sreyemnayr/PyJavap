@@ -49,7 +49,7 @@ class PyAnalyzerMainDialog(QDialog, ui_MainDlg.Ui_Dialog):
                 constants = result.getConstants()
                 self.tabWidget.setTabText(1, "Constant Pool (%d)" % len(constants))
 
-            except ParsingException,e:
+            except ParsingException as e:
                 print(e)
 
         else:
