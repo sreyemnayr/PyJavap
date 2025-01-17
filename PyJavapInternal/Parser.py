@@ -15,10 +15,11 @@ from PyJavapInternal.ExceptionInfo import ExceptionInfo
 class Parser:
 
 
-    def __init__(self, cls_file_name):
-        self.cls_file_name = cls_file_name
+    def __init__(self, filename="", file=None):
+        self.cls_file_name = filename
+        self.clsFile = file
+        
         self.result = ParsingResult(self.cls_file_name)
-        self.clsFile = None
 
     def __verify(self):
         """
@@ -213,7 +214,8 @@ class Parser:
             self.__verify()
 
             # parse the magic number of class file
-            self.clsFile = open(self.cls_file_name, 'rb')
+            if not self.clsFile:
+                self.clsFile = open(self.cls_file_name, 'rb')
 
             # following functions' order is very important
             self.__parseMagicNum()
