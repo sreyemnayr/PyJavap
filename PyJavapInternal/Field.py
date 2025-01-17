@@ -16,7 +16,7 @@ class Field(object):
         self.attributes.append(attribute)
 
     def __str__(self):
-        result = "Name: " + self.name + "(" + self.descriptor + ")"
+        result = "Name: " + str(self.name) + "(" + str(self.descriptor) + ")"
         result += " Access: " + FieldAccessFlags.flagToStr(self.access)
 
         result += "\n"
