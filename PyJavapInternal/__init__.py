@@ -25,7 +25,7 @@ def ByteToHex(byteStr):
     #
     #    return ''.join( hex ).strip()
 
-    return ''.join(["%02X" % ord(x) for x in byteStr])
+    return ''.join(["%02X" % x for x in byteStr])
 
 def HexToByte(hexStr):
     """
