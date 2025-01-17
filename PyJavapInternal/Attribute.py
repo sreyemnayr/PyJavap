@@ -295,7 +295,7 @@ class LineNumberTableAttribute(Attribute):
         return attribute
 
 
-import PyJavapInternal.ByteCode as bc
+from . import ByteCode as bc
 
 class CodeAttribute(Attribute):
 
