@@ -1,6 +1,6 @@
 __author__ = 'jasonlee'
 
-from PyJavapInternal.Parser import Parser, ParsingResult
+from .PyJavapInternal.Parser import Parser, ParsingResult
 
 if __name__ == '__main__':
 

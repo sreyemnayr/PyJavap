@@ -2,7 +2,7 @@ __author__ = 'yli'
 
 import sys
 from PyQt4.QtGui import QApplication
-from PyJavapGuiInternal.PyAnalyzerMainDialog import PyAnalyzerMainDialog
+from .PyJavapGuiInternal.PyAnalyzerMainDialog import PyAnalyzerMainDialog
 
 if __name__ == '__main__':
 

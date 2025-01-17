@@ -2,15 +2,15 @@ __author__ = 'jasonlee'
 
 import os.path
 import os
-from PyJavapInternal.ParsingResult import ParsingResult
-from PyJavapInternal.ParsingException import ParsingException
-from PyJavapInternal import ByteToDec
-from PyJavapInternal.ConstantPool import ConstantPool
-from PyJavapInternal.Field import Field
-from PyJavapInternal.Method import Method
-from PyJavapInternal.Attribute import Attribute
-from PyJavapInternal.Attribute import *
-from PyJavapInternal.ExceptionInfo import ExceptionInfo
+from .PyJavapInternal.ParsingResult import ParsingResult
+from .PyJavapInternal.ParsingException import ParsingException
+from .PyJavapInternal import ByteToDec
+from .PyJavapInternal.ConstantPool import ConstantPool
+from .PyJavapInternal.Field import Field
+from .PyJavapInternal.Method import Method
+from .PyJavapInternal.Attribute import Attribute
+from .PyJavapInternal.Attribute import *
+from .PyJavapInternal.ExceptionInfo import ExceptionInfo
 
 class Parser:
 

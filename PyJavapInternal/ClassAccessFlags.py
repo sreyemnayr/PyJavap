@@ -1,6 +1,6 @@
 __author__ = 'jasonlee'
 
-from PyJavapInternal import doFlagToStr
+from .PyJavapInternal import doFlagToStr
 
 ACC_PUBLIC = 0x0001
 ACC_PRIVATE = 0x0002

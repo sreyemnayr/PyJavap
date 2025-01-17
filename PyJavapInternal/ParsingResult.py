@@ -1,10 +1,10 @@
 __author__ = 'jasonlee'
 
 import PyJavapInternal
-from PyJavapInternal import ClassAccessFlags, FieldAccessFlags
-from PyJavapInternal.ConstantPool import ConstantClassInfo, ConstantUTF8Info
-from PyJavapInternal.ParsingException import ParsingException
-from PyJavapInternal.ConstantPool import *
+from .PyJavapInternal import ClassAccessFlags, FieldAccessFlags
+from .PyJavapInternal.ConstantPool import ConstantClassInfo, ConstantUTF8Info
+from .PyJavapInternal.ParsingException import ParsingException
+from .PyJavapInternal.ConstantPool import *
 
 class ParsingResult:
 
