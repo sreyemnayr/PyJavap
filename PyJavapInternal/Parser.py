@@ -25,7 +25,7 @@ class Parser:
         """
         Verify the given arguments.
         """
-        if not clsFile:
+        if not self.clsFile:
             if not (os.path.exists(self.cls_file_name) and os.path.isfile(self.cls_file_name)):
                 raise ParsingException("Can't find the class file %s" % self.cls_file_name)
 
