@@ -98,7 +98,7 @@ class ParsingResult:
                 result += "==========================\n"
 
                 for i in range(len(self.constants)):
-                    result += 'const #%d = %s\n' % (i + 1, str(self.constants[i].decode() if type(self.constants[i]) == bytes else self.constants[i])))
+                    result += 'const #%d = %s\n' % (i + 1, str(self.constants[i].decode() if type(self.constants[i]) == bytes else self.constants[i]))
 
             result += "==========================\n"
 
