@@ -5,6 +5,7 @@ from . import ClassAccessFlags, FieldAccessFlags
 from .ConstantPool import ConstantClassInfo, ConstantUTF8Info
 from .ParsingException import ParsingException
 from .ConstantPool import *
+from . import ByteToHex
 
 class ParsingResult:
 
@@ -87,7 +88,7 @@ class ParsingResult:
         result = ""
 
         result += "File Name: %s\n" % self.cls_file_name
-        result += "Magic Number: %s\n" % PyJavapInternal.ByteToHex(self.magicNumber)
+        result += "Magic Number: %s\n" % ByteToHex(self.magicNumber)
         result += "Major Version: %d\n" % self.majorVer
         result += "Minor Version: %d\n" % self.minorVer
 
