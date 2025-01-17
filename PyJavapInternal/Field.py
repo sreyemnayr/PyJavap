@@ -5,6 +5,12 @@ from PyJavapInternal import FieldAccessFlags
 class Field(object):
 
     def __init__(self, name, descriptor, access):
+        if type(name) == bytes:
+            name = name.decode()
+        if type(descriptor) == bytes:
+            descriptor = descriptor.decode()
+        if type(access) == bytes:
+            access = access.decode()
         self.name = name
         self.descriptor = descriptor
         self.access = access
