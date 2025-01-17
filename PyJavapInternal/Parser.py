@@ -227,7 +227,7 @@ class Parser:
             self.__parseMethods()
             self.__parseAttribute()
 
-        except ParsingException,e:
+        except ParsingException as e:
 
             raise e
 
