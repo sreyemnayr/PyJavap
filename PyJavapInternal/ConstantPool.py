@@ -367,7 +367,7 @@ class ConstantPool:
             CONSTANT_NAMEANDTYPE_INFO: ConstantNameAndTypeInfo.parse,
         }
 
-        if handlers.has_key(type):
+        if type in handlers:
             return handlers[type]
         else:
             return None
@@ -389,7 +389,7 @@ class ConstantPool:
             CONSTANT_NAMEANDTYPE_INFO: 4
         }
 
-        if typeContentBytes.has_key(type):
+        if type in typeContentBytes:
             return typeContentBytes[type]
         else:
             return 0

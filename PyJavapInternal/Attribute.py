@@ -35,7 +35,7 @@ class Attribute(object):
             CONSTANT_VALUE_NAME: ConstantValueAttribute.parse,
         }
 
-        if parserDict.has_key(attrName):
+        if attrName in parserDict:
             return parserDict[attrName]
         else:
             return None
