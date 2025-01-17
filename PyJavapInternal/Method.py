@@ -1,6 +1,6 @@
 __author__ = 'jason'
 
-from .PyJavapInternal import MethodAccessFlags
+from . import MethodAccessFlags
 
 class Method(object):
 

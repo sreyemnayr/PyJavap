@@ -1,6 +1,6 @@
 __author__ = 'jason'
 
-from .PyJavapInternal import FieldAccessFlags
+from . import FieldAccessFlags
 
 class Field(object):
 

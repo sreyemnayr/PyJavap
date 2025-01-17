@@ -5,9 +5,9 @@ import ui_MainDlg
 from PyQt4.QtCore import *
 from PyQt4.QtGui import *
 
-from .PyJavapInternal.Parser import Parser
-from .PyJavapInternal.ParsingResult import ParsingResult
-from .PyJavapInternal.ParsingException import ParsingException
+from .Parser import Parser
+from .ParsingResult import ParsingResult
+from .ParsingException import ParsingException
 from .PyJavapInternal import ByteToDec, ByteToHex
 from .PyJavapInternal import ClassAccessFlags
 

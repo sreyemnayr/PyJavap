@@ -1,7 +1,7 @@
 __author__ = 'jasonlee'
 
-from .PyJavapInternal.ParsingException import ParsingException
-from .PyJavapInternal import ByteToDec,ByteToHex, ByteTo32BitFloat,ByteTo64BitFloat
+from .ParsingException import ParsingException
+from . import ByteToDec,ByteToHex, ByteTo32BitFloat,ByteTo64BitFloat
 
 CONSTANT_UTF8_INFO = 0x01
 CONSTANT_INTEGER_INFO = 0x03

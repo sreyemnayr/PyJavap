@@ -1,8 +1,8 @@
 __author__ = 'jason'
 
-from .PyJavapInternal import ByteToHex, ByteToDec
-from .PyJavapInternal.ExceptionInfo import ExceptionInfo
-from .PyJavapInternal import InnerClassAccessFlags
+from . import ByteToHex, ByteToDec
+from .ExceptionInfo import ExceptionInfo
+from . import InnerClassAccessFlags
 
 CODE_NAME = 'Code'
 LINE_NUMBER_TABLE_NAME = 'LineNumberTable'
