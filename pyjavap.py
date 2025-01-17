@@ -18,8 +18,8 @@ if __name__ == '__main__':
     clsResult = clsParser.parse()
 
     if clsResult:
-        print clsResult.__str__()
+        print(clsResult.__str__())
     else:
-        print 'Parsing failed. Please check the log.'
+        print('Parsing failed. Please check the log.')
 
 

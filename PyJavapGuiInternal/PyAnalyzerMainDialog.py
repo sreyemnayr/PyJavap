@@ -35,7 +35,7 @@ class PyAnalyzerMainDialog(QDialog, ui_MainDlg.Ui_Dialog):
 
             try:
                 result = parser.parse()
-                print result
+                print(result)
 
                 self.magicNumText.setText(ByteToHex(result.getMagicNumber()))
 
@@ -50,7 +50,7 @@ class PyAnalyzerMainDialog(QDialog, ui_MainDlg.Ui_Dialog):
                 self.tabWidget.setTabText(1, "Constant Pool (%d)" % len(constants))
 
             except ParsingException,e:
-                print e
+                print(e)
 
         else:
-            print 'Select nothing.'
+            print('Select nothing.')
